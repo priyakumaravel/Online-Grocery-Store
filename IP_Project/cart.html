@@ -1,0 +1,76 @@
+<html>
+<head>
+    <meta charset='UTF-8' />
+    <title> Grocery Cart</title>
+    <link rel="stylesheet" type="text/css" href="./cart.css">
+
+</html>
+<marquee width="100%" direction="right" height="100px"><h1>GROCERY CART PAGE</h1></marquee>
+<body>
+    <header>
+       <h2>Click the items to add them to your cart</h2>
+    </header>
+
+    <table id="choices">
+        <tbody>
+            <tr>
+                <td><img src="C:\Users\Priyakumaravel\Desktop\IP_Project\image\Almonds.jpg" alt="almonds" id="almonds" /></td>
+                <td><img src="C:\Users\Priyakumaravel\Desktop\IP_Project\image\cashew.jpg" alt="cashew" id="cashew" /></td>
+                <td><img src="C:\Users\Priyakumaravel\Desktop\IP_Project\image\walnut.jpg" alt="walnut" id="walnut" /></td>
+                <td><img src="C:\Users\priyakumaravel\Desktop\IP_Project\image\peanuts.jpg" alt="peanuts" id="peanuts" /></td>
+                <td><img src="C:\Users\Priyakumaravel\Desktop\IP_Project\image\jessica.jpg"alt="jessica" id="jessica" /></td>
+            </tr>
+            <tr>
+                <td><img src="C:\Users\Priyakumaravel\Desktop\IP_Project\image\bourborn.jpg" alt="bourborn" id="bourborn" /></td>
+                <td><img src="C:\Users\Priyakumaravel\Desktop\IP_Project\image\milk.jpg" alt="milk" id="milk" /></td>
+                <td><img src="C:\Users\Priyakumaravel\Desktop\IP_Project\image\goodday.jpg" alt="goodday" id="goodday" /></td>
+                <td><img src="C:\Users\Priyakumaravel\Desktop\IP_Project\image\nice.jpg" alt="nice" id="nice" /></td>
+                <td><img src="C:\Users\Priyakumaravel\Desktop\IP_Project\image\mariagold.jpg" alt="mariagold" id="mariagold" /></td>
+            </tr>
+            <tr>
+                <td><img src="C:\Users\Priyakumaravel\Desktop\IP_Project\image\apple.jpg" alt="apple" id="apple" /></td>
+                <td><img src="C:\Users\Priyakumaravel\Desktop\IP_Project\image\stawrberry.jpg" alt="strawberry" id ="strawberry"/></td>
+                <td><img src="C:\Users\Priyakumaravel\Desktop\IP_Project\image\orange.jpeg" alt="orange" id="orange" /></td>
+                <td><img src="C:\Users\Priyakumaravel\Desktop\IP_Project\image\guva.jpg" alt="guva" id="guva" /></td>
+                <td><img src="C:\Users\Priyakumaravel\Desktop\IP_Project\image\grapes.jpg" alt="grapes" id="grapes" /></td>
+            </tr>
+            <tr>
+                <td><img src="http://i.imgur.com/enAtAK0.jpg" alt="Ice cream" id="icecream" /></td>
+                <td><img src="http://i.imgur.com/jygrwtp.jpg" alt="flan" id="flan" /></td>
+                <td><img src="http://i.imgur.com/KOuYZa9.jpg" alt="cookie" id="cookie" /></td>
+                <td><img src="http://i.imgur.com/KypVHJM.jpg" alt="cupcake" id="cupcake" /></td>
+                <td><img src="http://i.imgur.com/DzxWlRg.jpg" alt="milkshake" id="milkshake" /></td>
+            </tr>
+                   </tbody>
+    </table>
+    <div id="contain">
+        <p>Grocery Cart (click item to remove)</p>
+        <input type="button" value="Clear list" onclick="clearList()" />
+        <input type="button" value="Calculate price" onclick="calculatePrice()" />
+    </div>
+    <div id="total"></div>
+    <table>
+        <tbody>
+            <tr>
+                <td><p>Nuts:</p>
+                    <input type="button" value="Clear column" onclick="clearColumn(this)" class="center" />
+                    <div id="nuts"></div></td>
+                <td><p>Biscuits:</p>
+                    <input type="button" value="Clear column" onclick="clearColumn(this)" class="center" />
+                    <div id="biscuits"></div></td>
+                <td><p>Fruit items:</p>
+                    <input type="button" value="Clear column" onclick="clearColumn(this)" class="center" />
+                    <div id="fruit"></div></td>
+                <td><p>Sweets:</p>
+                    <input type="button" value="Clear column" onclick="clearColumn(this)" class="center" />
+                    <div id="sweet"></div></td>
+                <td><p>Drinks:</p>
+                    <input type="button" value="Clear column" onclick="clearColumn(this)" class="center" />
+                    <div id="drink"></div></td>
+            </tr>
+        </tbody>
+    </table>
+<script src="./cart.js" type="text/javascript"></script>
+
+</body>
+</html>

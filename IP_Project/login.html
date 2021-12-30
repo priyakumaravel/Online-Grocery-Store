@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+  <style>
+    body {
+      background-image: url("https://image.shutterstock.com/image-illustration/internet-security-closed-pad-lock-260nw-515395867.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    form {
+      width: 500px;
+      
+      border: 3px solid #f1eaea;
+    }
+  </style>
+<script>  
+  function Loginform(){  
+  var n=document.logform.name.value;  
+  var p=document.logform.password.value;  
+    
+  if (n=="" || p=="")
+  {  
+    alert("All fields must be filled out");  
+    return false;  
+  } 
+  if(Password.length<6)
+   {
+        alert("password keep strong password");
+        return false;
+  }
+  }
+  </script> 
+
+
+<body>
+
+  <h1>Login Form</h1>
+
+  <form name ="logform" action="category.html"  onsubmit="return Loginform()">
+    <div class="imgcontainer">
+      <img src="" alt="" class="">
+    </div>
+
+    <div class="container">
+      <font color="mediumseagreen"><b>USERNAME:</b></font>
+      <input type="text" placeholder="Enter Username" name="username">
+      <br>
+      <br>
+      <font color="mediumseagreen"><b>PASSWORD:</b></font>
+      <input type="password" placeholder="Enter Password" name="password">
+      <br>
+      <br>
+
+      <button type="submit">Login</button>
+      <br>
+      <br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember">
+        <font color="red">Remember me</font>
+
+      </label>
+    </div>
+    <br>
+    <br>
+    <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+
+    </div>
+  </form>
+
+</body>
+
+</html>

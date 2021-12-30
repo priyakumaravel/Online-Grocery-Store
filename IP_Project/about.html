@@ -1,0 +1,78 @@
+﻿<html>
+
+<head>
+  <style>
+    body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkln275HxDY3kUTpZPXkF96cRDHg_D4JQ4Pw&usqp=CAU");
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+
+    #p {
+      border: 2px solid rgb(98, 148, 150);
+      padding: 10px;
+      border-top-left-radius: 25px;
+    }
+
+    #r {
+      border-top: double;
+    }
+    #panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #ccedee;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+  </style>
+</head>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrWwr0iGMOithMPEZ3jhXhTpXAmiV_cdqRXw&usqp=CAU"
+  style="width:150px" alt="about" height="100" width="10000">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+<body>
+  <div id="flip"><h1>Click to slide down</h1></div>
+<div id="panel"><b>Did you ever imagine that the freshest of fruits and vegetables, food grains, dairy products and hundreds
+    of branded items could be handpicked and delivered to your home, all at the click of a button? India’s first
+    comprehensive online megastore, bigbasket.com, brings a whopping 20000+ products with more than 1000 brands, to over
+    4 million happy customers. From household cleaning products to beauty and makeup, bigbasket has everything you need
+    for your daily needs. bigbasket.com is convenience personified We’ve taken away all the stress associated with
+    shopping for daily essentials, and you can now order all your household products and even buy groceries online
+    without travelling long distances or standing in serpentine queues. Add to this the convenience of finding all your
+    requirements at one single source, along with great savings, and you will realize that bigbasket- India’s largest
+    online supermarket, has revolutionized the way India shops for groceries. Online grocery shopping has never been
+    easier. Need things fresh? Whether it’s fruits and vegetables or dairy and meat, we have this covered as well! Get
+    fresh eggs, meat, fish and more online at your convenience. Hassle-free Home Delivery options
+
+    We deliver to 25 cities across India and maintain excellent delivery times, ensuring that all your products from
+    groceries to snacks branded foods reach you in time.</b></div>
+
+    <div id ="p">
+    <h1><b>Opening Hours</b></h1>
+    <div id="r"></div>
+    <b><p>Mon & Tue CLOSED</p>
+    <p>Wednesday 10.00 - 24.00</p>
+    <p>Thursday 10:00 - 24:00</p>
+    <p>Friday 10:00 - 12:00</p>
+    <p>Saturday 10:00 - 23:00</p>
+    <p>Sunday Closed</p></b>
+  <button>CLICK BUTTON</button>
+</body>
+</html>

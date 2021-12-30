@@ -1,0 +1,66 @@
+<%@page import="java.sql.*"%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%
+    
+try {
+           
+Class.forName("com.mysql.jdbc.Driver");
+    
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/reg","root","priya");
+ 
+PreparedStatement st = con.prepareStatement("insert into regs values(?,?,?,?,?,?,?,?,?);");
+ 
+st.setInt(1, Integer.valueOf(request.getParameter("firstname")));
+        
+st.setString(2, String.valueOf(request.getParameter("lastname")));
+          
+st.setString(3, String.valueOf(request.getParameter("address")));
+  
+st.setString(4, String.valueOf(request.getParameter("city")));
+       
+st.setString(5, String.valueOf(request.getParameter("state")));
+
+st.setInt(6, Integer.valueOf(request.getParameter("pincode")));
+st.setString(7, String.valueOf(request.getParameter("country")));
+st.setString(8, String.valueOf(request.getParameter("username")));
+st.setString(9,String.valueOf(request.getParameter("password")));
+
+
+
+
+st.executeUpdate();
+        
+st.close();
+
+con.close();
+
+response.sendRedirect("view.jsp");
+     
+   }
+ catch (Exception e) 
+{
+
+e.printStackTrace();
+
+}
+%>
+
+
+<!DOCTYPE html>
+
+<html>
+ 
+<head>
+ 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+ </head>
+  
+<body>
+        
+   
+</body>
+
+</html>

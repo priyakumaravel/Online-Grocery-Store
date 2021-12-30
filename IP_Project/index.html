@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title> online website</title>
+    <style type="text/css">
+        
+        body {
+            background-image: url("https://media.istockphoto.com/photos/abstract-blur-green-park-in-spring-outdoor-background-concept-for-picture-id1156172029?k=20&m=1156172029&s=612x612&w=0&h=UAOnc6vzECaEKCvi2Z1UjEwRqysiri61RimXdNSj9u0=");
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+        }
+        
+        #blink {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2d38be;
+            transition: 0.5s;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: crimson;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: burlywood;
+}
+        
+    </style>
+</head>
+
+<table width=100% align="center" cellpadding="0" cellspacing="2">
+    <tr>
+        <th width=20%><img src="https://cdn3.vectorstock.com/i/1000x1000/98/22/logo-for-grocery-store-vector-21609822.jpg" alt=logo
+                height="200" width="200" /></th>
+        <th colspan=4>
+            <h2>
+                <marquee scrollamount=2 scrolldelay=10 behavior=alternate>
+                    <p id="blink"> <b> WELCOME TO ONLINE GROCERY STORE</b> </p>
+                    <script>
+                        var blink = document.getElementById('blink');
+                        setInterval(function () {
+                            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+                        }, 1500);
+                    </script>
+                </marquee>
+            </h2>
+        </th>
+    </TR>
+</tbody>
+</table>
+</hr>
+<body>
+    <nav >
+            
+                <ul>
+                    <li><a class="active" href="#home">HOME</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="reglog.html">REGISTRATION</a></li>
+                    <li><a href="category.html">CATEGORY</a></li>
+                    <li><a href="payment.html">PAYMENT</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+                      </nav>
+    <center>
+    <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV4c6zow9kkosvRcquFFItVGBDTcphyRQrVw&usqp=CAU" height="300" width="600">
+    <p><h1 style="color:rgb(255, 0, 0)"><i>Keep Calm  <BR> And <BR> Shope Online</i></h1></p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFftE_aWMIjmif465iFmgMHDYOmUGAIYOQ2Q&usqp=CAU" align ="center" width="100" height="80">
+    </body>
+</center>
+
+
+</html>
